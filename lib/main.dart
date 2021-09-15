@@ -62,11 +62,9 @@ class _InfoPageState extends State<InfoPage> {
                   child: Column(
                     children: [
                       CustomHeader(text: "Employment  History"),
-                      CustomField(text: "Personal Details", icon: Icons.person),
-                      CustomField(text: "Contact", icon: Icons.phone),
-                      CustomField(text: "Career Application Information", icon: Icons.file_copy),
-                      CustomField(text: "Preferred Area", icon: Icons.location_city),
-                      CustomField(text: "Other Relevant Information", icon: Icons.info_rounded),
+                      CustomField(text: "Web Developer at AdovaSoft", icon: Icons.cases),
+                      CustomField(text: "Programmer at AdovaSoft", icon: Icons.cases),
+
                     ],
                   ),
                 ),
@@ -75,12 +73,10 @@ class _InfoPageState extends State<InfoPage> {
                 child: Card(
                   child: Column(
                     children: [
-                      CustomHeader(text: "Personal Information"),
-                      CustomField(text: "Personal Details", icon: Icons.person),
-                      CustomField(text: "Contact", icon: Icons.phone),
-                      CustomField(text: "Career Application Information", icon: Icons.file_copy),
-                      CustomField(text: "Preferred Area", icon: Icons.location_city),
-                      CustomField(text: "Other Relevant Information", icon: Icons.info_rounded),
+                      CustomHeader(text: "Other Information"),
+                      CustomField(text: "Specialization", icon: Icons.file_copy_sharp),
+                      CustomField(text: "Language Proficiency", icon: Icons.language),
+                      CustomField(text: "Reference", icon: Icons.person_add),
                     ],
                   ),
                 ),
