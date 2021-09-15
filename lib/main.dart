@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: "OpenSans"
+      ),
       debugShowCheckedModeBanner: false,
       home: InfoPage(),
     );
@@ -117,12 +120,16 @@ class CustomField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon),
+      leading: Icon(
+        icon,
+        size: 26,
+        color: Colors.black87,
+      ),
       title: Text(
         text,
         style: TextStyle(
           fontSize: 16,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
         ),),
     );
   }
