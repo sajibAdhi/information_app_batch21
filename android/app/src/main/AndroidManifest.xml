@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.information_app_batch21">
    <application
-        android:label="information_app_batch21"
+        android:label="Information App"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

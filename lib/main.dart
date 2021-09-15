@@ -35,53 +35,47 @@ class _InfoPageState extends State<InfoPage> {
           child: Column(
             children: [
               Container(
-                child: Card(
-                  child: Column(
-                    children: [
-                      CustomHeader(text: "Personal Information"),
-                      CustomField(text: "Personal Details", icon: Icons.person),
-                      CustomField(text: "Contact", icon: Icons.phone),
-                      CustomField(text: "Career Application Information", icon: Icons.file_copy),
-                      CustomField(text: "Preferred Area", icon: Icons.location_city),
-                      CustomField(text: "Other Relevant Information", icon: Icons.info_rounded),
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    CustomHeader(text: "Personal Information"),
+                    CustomField(text: "Personal Details", icon: Icons.person),
+                    CustomField(text: "Contact", icon: Icons.phone),
+                    CustomField(text: "Career Application Information", icon: Icons.file_copy),
+                    CustomField(text: "Preferred Area", icon: Icons.location_city),
+                    CustomField(text: "Other Relevant Information", icon: Icons.info_rounded),
+                  ],
                 ),
               ),
               Container(
-                child: Card(
-                  child: Column(
-                    children: [
-                      CustomHeader(text: "Education / Training"),
-                      CustomField(text: "Academic Qualification", icon: Icons.build),
-                      CustomField(text: "Training Summary", icon: Icons.model_training),
-                      CustomField(text: "Professional Certificate Summary", icon: Icons.file_download),
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    CustomHeader(text: "Education / Training"),
+                    CustomField(text: "Academic Qualification", icon: Icons.build),
+                    CustomField(text: "Training Summary", icon: Icons.model_training),
+                    CustomField(text: "Professional Certificate Summary", icon: Icons.file_download),
+                  ],
                 ),
               ),
+              HorizontalLine(),
               Container(
-                child: Card(
-                  child: Column(
-                    children: [
-                      CustomHeader(text: "Employment  History"),
-                      CustomField(text: "Web Developer at AdovaSoft", icon: Icons.cases),
-                      CustomField(text: "Programmer at AdovaSoft", icon: Icons.cases),
+                child: Column(
+                  children: [
+                    CustomHeader(text: "Employment  History"),
+                    CustomField(text: "Web Developer at AdovaSoft", icon: Icons.cases),
+                    CustomField(text: "Programmer at AdovaSoft", icon: Icons.cases),
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
+              HorizontalLine(),
               Container(
-                child: Card(
-                  child: Column(
-                    children: [
-                      CustomHeader(text: "Other Information"),
-                      CustomField(text: "Specialization", icon: Icons.file_copy_sharp),
-                      CustomField(text: "Language Proficiency", icon: Icons.language),
-                      CustomField(text: "Reference", icon: Icons.person_add),
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    CustomHeader(text: "Other Information"),
+                    CustomField(text: "Specialization", icon: Icons.file_copy_sharp),
+                    CustomField(text: "Language Proficiency", icon: Icons.language),
+                    CustomField(text: "Reference", icon: Icons.person_add),
+                  ],
                 ),
               ),
             ],
@@ -123,7 +117,7 @@ class CustomField extends StatelessWidget {
       leading: Icon(
         icon,
         size: 26,
-        color: Colors.black87,
+        color: Colors.black,
       ),
       title: Text(
         text,
@@ -134,5 +128,23 @@ class CustomField extends StatelessWidget {
     );
   }
 }
+
+class HorizontalLine extends StatelessWidget {
+  const HorizontalLine({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(10),
+      child: SizedBox(
+        child: Divider(
+          color: Colors.black45,
+          thickness: 1,
+        ),
+      ),
+    );
+  }
+}
+
 
 
